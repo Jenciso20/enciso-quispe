@@ -1,0 +1,20 @@
+<div class="receta-container">
+    <h2>Caldo de Gallina</h2>
+    <p>El caldo de gallina es uno de mis platos favoritos, especialmente cuando lo prepara mi mamá. Es un plato reconfortante y lleno de sabor, perfecto para compartir en familia.</p>
+
+    <h3>Ingredientes:</h3>
+    <div *ngFor="let receta of recetas">
+        <ul>
+            <li *ngFor="let ingrediente of receta.ingredientes">
+                {{ingrediente}}
+            </li>
+        </ul>
+
+        <h3>Instrucciones:</h3>
+        <ol>
+            <li *ngFor="let paso of receta.preparacion">
+                {{paso}}
+            </li>
+        </ol>
+    </div>
+</div>

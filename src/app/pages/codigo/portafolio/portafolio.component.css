@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #050a05;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.skills-list li:last-child {
+    border-bottom: none;
+}
+
+.skills-list strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

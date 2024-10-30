@@ -1,0 +1,11 @@
+<h2>Destinos que he visitado</h2>
+<ul class="travel-list">
+  <li *ngFor="let viaje of viajes">
+    <strong>{{ viaje.lugar }}:</strong> {{ viaje.descripcion }}
+    <!-- Mostrar la imagen solo si existe -->
+    <img *ngIf="viaje.imagen" class="viaje-img" [src]="viaje.imagen" alt="{{ viaje.lugar }}">
+  </li>
+</ul>
+
+  
+  

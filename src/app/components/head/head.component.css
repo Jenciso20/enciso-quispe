@@ -1,0 +1,61 @@
+/* Estilo General para el menú */
+nav {
+    background-color: #000; /* Fondo completamente negro */
+    padding: 15px;
+  }
+  
+  ul.menu {
+    list-style-type: none; /* Eliminar los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usar flexbox para alinear los ítems */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  
+  ul.menu li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+  }
+  
+  ul.menu li a {
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave para cambios de color */
+    padding: 5px 10px;
+    position: relative;
+  }
+  
+  ul.menu li a:hover {
+    color: #c0c0c0; /* Color gris plateado al pasar el mouse */
+    border-bottom: 2px solid #1e90ff; /* Subrayado en azul oscuro */
+  }
+  
+  ul.menu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1e90ff; /* Subrayado azul oscuro */
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Separación del subrayado */
+  }
+  
+  ul.menu li a:hover::after {
+    width: 100%; /* Expande la línea completa al pasar el mouse */
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    ul.menu {
+      flex-direction: column; /* Cambia la disposición a columnas en pantallas pequeñas */
+      align-items: center;
+    }
+    
+    ul.menu li {
+      margin-bottom: 10px;
+    }
+  }
+  

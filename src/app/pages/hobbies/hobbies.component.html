@@ -1,0 +1,8 @@
+<h2>Lo que me gusta hacer en mi tiempo libre</h2>
+<ul class="hobbies-list">
+    <li *ngFor="let hobbie of hobbies">
+        <strong>{{ hobbie.title }}:</strong> {{ hobbie.descripcion }}
+        <!-- Mostrar la imagen solo si existe -->
+        <img *ngIf="hobbie.imagen" class="hobbie-img" [src]="hobbie.imagen" alt="{{ hobbie.title }}">
+      </li>
+</ul>
